@@ -12,18 +12,16 @@ function takeANumber(queue){
 
   ticketNumber++
   queue.push(ticketNumber)                                                      //add the new customer to the end of the line
-  var oldTicketNumber = ticketNumber
   var place = queue.length                                                      //get their place in line
-  //ticketNumber++
-  return `You are number ${place} in line, your ticket number is ${ticketNumber}`                                     //welcome that person
+  return `You are number ${place} in line, your ticket number is ${ticketNumber}`          //welcome that person
 }
 
 //PART TWO
 function nowServing(queue){
   if(queue.length >= 1){                                                        //if the line's not empty
-    var customer = queue[0]                                                     //get the first customer (at index 0)
+    var tNumber = queue[0]                                                     //get the first customer (at index 0)
     queue.shift()                                                               //remove that person from the line
-    return `Currently serving ${customer}.`                                     //and print the statement
+    return `Currently serving ${tNumber}.`                                     //and print the statement
   } else {                                                                      //otherwise
     return "There is nobody waiting to be served!"                              //print the other statement
   }
