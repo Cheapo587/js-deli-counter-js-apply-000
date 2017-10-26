@@ -2,7 +2,7 @@ var katzDeli = []       //create the deli
 
 var katzDeliLine = []   //create the deli line (whats the difference?)
 
-var ticketNumber = 27
+var ticketNumber = 0
 
 //PART ONE
 function takeANumber(queue){
