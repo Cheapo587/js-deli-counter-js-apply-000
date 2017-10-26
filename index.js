@@ -2,14 +2,17 @@ var katzDeli = []       //create the deli
 
 var katzDeliLine = []   //create the deli line (whats the difference?)
 
+var ticketNumber = 27
+
 //PART ONE
-function takeANumber(queue, ticketNumber){
+function takeANumber(queue){
   /*
   take a ticket number
   */
-  
-  queue.push(name)                                                              //add the new customer to the end of the line
+
+  queue.push(ticketNumber)                                                      //add the new customer to the end of the line
   var place = queue.length                                                      //get their place in line
+  ticketNumber++;
   return `You are number ${place} in line, your ticket number is ${ticketNumber}`                                     //welcome that person
 }
 
