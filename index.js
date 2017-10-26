@@ -20,7 +20,6 @@ function nowServing(queue){
   }
 }
 
-
 //PART THREE
 function currentLine(queue){
   if(queue.length === 0){                                                       //if the line is empty
