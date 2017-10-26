@@ -19,9 +19,9 @@ function takeANumber(queue){
 //PART TWO
 function nowServing(queue){
   if(queue.length >= 1){                                                        //if the line's not empty
-    var tNumber = queue[0]                                                     //get the first customer (at index 0)
+    var tNumber = queue[0]                                                      //get the first customer (at index 0)
     queue.shift()                                                               //remove that person from the line
-    return `Currently serving ${tNumber}.`                                     //and print the statement
+    return `Currently serving ${tNumber}.`                                      //and print the statement
   } else {                                                                      //otherwise
     return "There is nobody waiting to be served!"                              //print the other statement
   }
