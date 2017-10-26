@@ -11,9 +11,10 @@ function takeANumber(queue){
   */
 
   queue.push(ticketNumber)                                                      //add the new customer to the end of the line
+  var oldTicketNumber = ticketNumber
   var place = queue.length                                                      //get their place in line
   ticketNumber++;
-  return `You are number ${place} in line, your ticket number is ${ticketNumber}`                                     //welcome that person
+  return `You are number ${place} in line, your ticket number is ${oldTicketNumber}`                                     //welcome that person
 }
 
 //PART TWO
